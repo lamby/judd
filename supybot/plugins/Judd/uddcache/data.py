@@ -136,14 +136,14 @@ class DebianData(AvailableData):
     release_map = {
                     'rc-buggy':            'experimental',
                     'unstable':            'sid',
-                    'testing':             'stretch',
-                    'stable':              'jessie',
-                    'stable-backports':    'jessie-backports',
-                    'oldstable':           'wheezy',
-                    'oldstable-backports': 'wheezy-backports',
-                    'oldoldstable':        'squeeze',
-                    'oldoldstable-backports': 'squeeze-backports',
-                    'oldoldstable-backports-sloppy': 'squeeze-backports-sloppy',
+                    'testing':             'buster',
+                    'stable':              'stretch',
+                    'stable-backports':    'stretch-backports',
+                    'oldstable':           'jessie',
+                    'oldstable-backports': 'jessie-backports',
+                    'oldoldstable':        'wheezy',
+                    'oldoldstable-backports': 'wheezy-backports',
+                    'oldoldstable-backports-sloppy': 'wheezy-backports-sloppy',
                 }
 
     releases = [
@@ -175,6 +175,12 @@ class DebianData(AvailableData):
                     #'stretch-backports',
                     #'stretch-backports-sloppy',
                     'stretch-multimedia',
+                    'buster',
+                    'buster-security',
+                    'buster-proposed-updates',
+                    #'buster-backports',
+                    #'buster-backports-sloppy',
+                    'buster-multimedia',
                     'sid',
                     'sid-multimedia',
                     'experimental',
@@ -188,6 +194,6 @@ class DebianData(AvailableData):
                'mips', 'mipsel', 'powerpc', 's390', 's390x',
                'sparc', 'all']
 
-    stable_release = 'jessie'
+    stable_release = 'stretch'
 
     default_arch = 'amd64'
